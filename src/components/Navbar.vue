@@ -139,9 +139,10 @@ export default {
           name: this.registred_user[user_index].name,
           password: this.registred_user[user_index].password,
         });
+        // this.user_name_login = "";
         this.$parent.show_content = true;
         this.hide_login_and_register = true;
-        this.user_name_login = this.registred_user[0].name;
+        this.user_name_login = this.log_in_user[0].name;
       } else {
         this.$parent.show_content = false;
       }
